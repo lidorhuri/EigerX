@@ -1,4 +1,4 @@
-select  DEPARTMENTcv.name, count(EMPLOYEEcv.id) as employeecnt from
-DEPARTMENTcv left join EMPLOYEEcv ON DEPARTMENTcv.id=EMPLOYEEcv.DEPT_ID
-GROUP BY DEPARTMENTcv.NAME
-ORDER BY employeecnt DESC, DEPARTMENTcv.name asc
+select  DEPARTMENT.name, count(EMPLOYEE.id) as employeecnt from
+DEPARTMENT left join EMPLOYEE ON DEPARTMENT.id=EMPLOYEE.DEPT_ID
+GROUP BY DEPARTMENT.NAME
+ORDER BY employeecnt DESC, DEPARTMENT.name asc
